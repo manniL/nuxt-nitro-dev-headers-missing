@@ -1,20 +1,14 @@
 # nitro-header-dev-bug
 
-## Build Setup
+## Problem
 
-```bash
-# install dependencies
-$ yarn install
+The whole req object is not available when using Nitro in dev mode.
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+Reproduction:
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+1. Install deps (yarn)
+2. Start dev server (yarn dev)
+3. Go to localhost:3000
 
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+Expected behavior: Seeing all header values
+Actual: See "undefined! (from plugins/headers.js)"
