@@ -21,6 +21,6 @@ export default {
     '@nuxt/nitro/compat'
   ],
   plugins: [
-    '~/plugins/headers.js'
+    '~/plugins/headers.server'
   ]
 }
